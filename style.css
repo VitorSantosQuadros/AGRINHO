@@ -15,6 +15,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 
 header h1 {
@@ -37,11 +38,24 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s; /* Transição suave para a cor do texto */
+}
+
+nav ul li a:hover {
+    color: #000; /* Muda para preto ao passar o mouse */
 }
 
 section {
     padding: 60px 20px;
     margin: 60px 10px 10px 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transições para opacidade e posição */
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #home {
@@ -55,6 +69,11 @@ section {
     width: 100%;
     margin-top: 20px;
     border-radius: 10px;
+    transition: transform 0.3s; /* Transição suave para a transformação */
+}
+
+.large-image:hover {
+    transform: scale(1.05); /* Ampliação ao passar o mouse */
 }
 
 .project, .testimonial {
@@ -64,6 +83,11 @@ section {
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Transição suave para a transformação */
+}
+
+.project:hover, .testimonial:hover {
+    transform: scale(1.02); /* Ampliação ao passar o mouse */
 }
 
 .gallery {
@@ -74,6 +98,11 @@ section {
 .gallery img {
     width: 30%;
     border-radius: 10px;
+    transition: transform 0.3s; /* Transição suave para a transformação */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Ampliação ao passar o mouse */
 }
 
 form {
@@ -92,24 +121,7 @@ form input, form textarea {
     border-radius: 5px;
     background-color: #fff; /* Cor de fundo dos campos de formulário */
     color: black; /* Cor do texto dos campos de formulário */
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-footer {
-    background-color: #4CAF50; /* Cor de fundo do rodapé */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+form input:focus, form textarea
