@@ -90,6 +90,18 @@ section.visible {
     transform: scale(1.02); /* Ampliação ao passar o mouse */
 }
 
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project h3, .project p {
+    font-size: 1.2em; /* Aumenta o tamanho da letra */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
 .gallery {
     display: flex;
     justify-content: space-around;
@@ -111,17 +123,3 @@ form {
 }
 
 form label {
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff; /* Cor de fundo dos campos de formulário */
-    color: black; /* Cor do texto dos campos de formulário */
-    transition: border-color 0.3s; /* Transição suave para a cor da borda */
-}
-
-form input:focus, form textarea
