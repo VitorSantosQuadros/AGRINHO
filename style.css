@@ -123,3 +123,34 @@ form {
 }
 
 form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Cor de fundo dos campos de formulário */
+    color: black; /* Cor do texto dos campos de formulário */
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4CAF50; /* Cor da borda ao focar no campo */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo do botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Muda a cor de fundo ao passar o mouse */
+}
